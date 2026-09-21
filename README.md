@@ -6,6 +6,8 @@ Think of it as an open, hackable take on the Xbox Game Bar: no store, no account
 
 Built with [Tauri v2](https://tauri.app) + Rust + Vue 3. Windows 10/11 only.
 
+![The bar](docs/bar.png)
+
 ## Features
 
 **The bar**
@@ -14,9 +16,13 @@ Built with [Tauri v2](https://tauri.app) + Rust + Vue 3. Windows 10/11 only.
 - Detachable widgets: performance, audio, display, guide
 - Clock, tray icon, autostart, first-run wizard, English / 简体中文 UI
 
+![Widgets: audio, guide finder, performance, display](docs/widgets.png)
+
 **Game library**
 - One-click import that finds installed games from Steam, Epic, GOG and Start Menu shortcuts (resolves `.lnk` targets, filters uninstallers and launchers), with cover art where available
 - Launch games straight from the bar; playtime is tracked locally per game
+
+![Settings center — game library](docs/settings.png)
 
 **Performance HUD**
 - FPS and 1% lows measured *inside* the game process (frame time at the Present hook — the same place RTSS gets it), so attribution is never wrong
