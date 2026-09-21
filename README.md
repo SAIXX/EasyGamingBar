@@ -6,6 +6,8 @@ Think of it as an open, hackable take on the Xbox Game Bar: no store, no account
 
 Built with [Tauri v2](https://tauri.app) + Rust + Vue 3. Windows 10/11 only.
 
+**Downloads:** grab the latest installers from [Releases](https://github.com/SAIXX/EasyGamingBar/releases) — `EasyGamingBar_0.1.0_x64-setup.exe` (NSIS) or `EasyGamingBar_0.1.0_x64_en-US.msi` (MSI).
+
 ## Features
 
 **The bar**
