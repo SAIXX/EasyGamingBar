@@ -1,0 +1,11 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "live-remote-emit",
+  "description": "直播页面（live-browser 窗口加载的远端站点）仅允许回报事件：live://fs 全屏状态、live://resize 缩放手柄、live://hb 存活心跳",
+  "windows": ["live-browser"],
+  "local": false,
+  "remote": {
+    "urls": ["https://*/*", "https://*"]
+  },
+  "permissions": ["core:event:allow-emit"]
+}

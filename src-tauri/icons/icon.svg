@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- EasyGamingBar 应用图标：E·G·B 三角 + 粉色渐变 -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFC0DB"/>
+      <stop offset="0.42" stop-color="#FF85C2"/>
+      <stop offset="1" stop-color="#F13E9D"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.28" cy="0.22" r="0.95">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.34"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <!-- userSpaceOnUse：纯横/竖线段路径的包围盒退化时 objectBoundingBox 渐变会失效 -->
+    <linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="162" y1="189" x2="862" y2="826">
+      <stop offset="0" stop-color="#FF6FB5"/>
+      <stop offset="1" stop-color="#E92B93"/>
+    </linearGradient>
+    <path id="spark" d="M0 -32 Q 6 -6 32 0 Q 6 6 0 32 Q -6 6 -32 0 Q -6 -6 0 -32 Z"/>
+  </defs>
+
+  <!-- 渐变底（圆角方块） -->
+  <rect width="1024" height="1024" rx="228" fill="url(#bg)"/>
+  <rect width="1024" height="1024" rx="228" fill="url(#glow)"/>
+
+  <!-- 三角连接线（画在节点圆盘下层，被实心圆盘截断） -->
+  <path d="M512 284 L257 726 L767 726 Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.85"
+        stroke-width="22" stroke-linejoin="round"/>
+
+  <!-- 顶点圆盘（实心白，托住字母） -->
+  <g fill="#FFFFFF">
+    <circle cx="512" cy="284" r="104"/>
+    <circle cx="257" cy="726" r="104"/>
+    <circle cx="767" cy="726" r="104"/>
+  </g>
+
+  <!-- 字母（描边几何字形，200 设计盒，0.95 缩放，粉色渐变墨色） -->
+  <g fill="none" stroke="url(#ink)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round">
+    <!-- E：顶点（上） -->
+    <g transform="translate(417 189) scale(0.95)">
+      <path d="M138 30 H66 V170 H138"/>
+      <path d="M66 100 H128"/>
+    </g>
+    <!-- G：顶点（左下） -->
+    <g transform="translate(162 631) scale(0.95)">
+      <path d="M148 52 A68 68 0 1 0 168 100 H112"/>
+    </g>
+    <!-- B：顶点（右下） -->
+    <g transform="translate(672 631) scale(0.95)">
+      <path d="M64 28 V172"/>
+      <path d="M64 28 H102 A36 36 0 0 1 102 100 H64"/>
+      <path d="M64 100 H110 A36 36 0 0 1 110 172 H64"/>
+    </g>
+  </g>
+
+  <!-- 点缀星光 -->
+  <use href="#spark" transform="translate(846 224)" fill="#FFFFFF" fill-opacity="0.92"/>
+  <use href="#spark" transform="translate(176 836) scale(0.62)" fill="#FFFFFF" fill-opacity="0.8"/>
+</svg>

@@ -1,0 +1,46 @@
+# 构建产物
+node_modules/
+dist/
+src-tauri/target/
+src-tauri/hooks/egb_hook/target/
+*.tsbuildinfo
+
+# Tauri 生成物（构建时自动再生）
+src-tauri/gen/schemas/
+
+# 本地配置与敏感文件
+*.local
+.env
+.env.*
+
+# 开发期调试产物（临时脚本 / 抓帧输出 / 旧构建 / 安装包 / whisper 模型）
+.preview/
+_probe/
+_cdp/
+.workbuddy/
+.whisper/
+release-out/
+dist_old_*/
+third_party/
+/*.txt
+/*.ps1
+/*.py
+/*.bin
+/_ref_main.cpp
+/20572
+/开发日志.md
+.zcodeignore
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# 日志
+*.log
+
+# 构建产物 / 已废弃的第三方二进制（egb_hook.dll 按 README 自行编译）
+src-tauri/resources/hooks/*.dll
+src-tauri/resources/presentmon/
