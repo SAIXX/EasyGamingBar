@@ -6,7 +6,7 @@ Think of it as an open, hackable take on the Xbox Game Bar: no store, no account
 
 Built with [Tauri v2](https://tauri.app) + Rust + Vue 3. Windows 10/11 only.
 
-**Downloads:** grab the latest installers from [Releases](https://github.com/SAIXX/EasyGamingBar/releases) — `EasyGamingBar_0.1.0_x64-setup.exe` (NSIS) or `EasyGamingBar_0.1.0_x64_en-US.msi` (MSI).
+![The bar over a game library](docs/ui-reference.png)
 
 ## Features
 
@@ -15,6 +15,8 @@ Built with [Tauri v2](https://tauri.app) + Rust + Vue 3. Windows 10/11 only.
 - Quick toggles on the left edge: HDR on/off (mirrors Win+Alt+B) and A/B audio output presets (headphones vs. speakers, one click)
 - Detachable widgets: performance, audio, display, guide
 - Clock, tray icon, autostart, first-run wizard, English / 简体中文 UI
+
+![Audio widget with A/B output presets](docs/audio-widget-ab-mockup.png)
 
 **Game library**
 - One-click import that finds installed games from Steam, Epic, GOG and Start Menu shortcuts (resolves `.lnk` targets, filters uninstallers and launchers), with cover art where available
